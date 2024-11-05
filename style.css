@@ -1,0 +1,7 @@
+.background {
+    margin: 0;
+    height:max-content; 
+    bottom: 0;
+    background: linear-gradient(to bottom, #ffffff, #578dd8, #194583, #020f22);
+    width: 100%; /* Ensure it takes the full width */
+}
