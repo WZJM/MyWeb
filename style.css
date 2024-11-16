@@ -1,10 +1,69 @@
+/*Appearance*/
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
 .background {
     margin: 0;
     height:max-content; 
     bottom: 0;
-    background: linear-gradient(to bottom, #ffffff, #578dd8, #194583, #020f22);
-    width: 100%; /* Ensure it takes the full width */
+    background: linear-gradient(to bottom, #ffffff, #ece250, #eefa84, #fcff9a);
+    width: 100%;
 }
-.center {
+.center{
     text-align: center;
+}
+.margin {
+    text-align: left;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.big {
+    font-size:30px;
+}
+.clickButton:hover{
+    color: rgb(49, 18, 83);
+    font-size: 150%;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.clickButton{
+    background-color: #fcffbd;
+    padding: 10px 20px;
+    border: 7px solid #f7ff11;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    
+}
+
+
+/*Animation*/
+
+@keyframes appear {
+    from {
+        transform: translateY(100px);
+    }
+    
+    to {
+        transform: translateY(0);
+    }
+}
+
+.appearAnimation1 {
+animation: appear 1s ease forwards;
+}
+
+@keyframes popImageAnimation {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.popImage {
+    font-size: 20px;    
+    display: inline-block;
+    animation: popImageAnimation 2s ease-in infinite;
 }
